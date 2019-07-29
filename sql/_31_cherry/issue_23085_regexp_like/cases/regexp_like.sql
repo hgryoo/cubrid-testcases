@@ -16,4 +16,8 @@ select regexp_like ('__pa 71 _file','\b[^_a-z09]_[0-1]\b');
 
 --sql/_22_news_service_mysql_compatibility/_04_regular_expression/answers/_01_basic_test_05.answer
 
+-- ...
+
 --sql/_22_news_service_mysql_compatibility/_04_regular_expression/answers/_02_scenario_03.answer
+
+-- ...

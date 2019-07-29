@@ -1,0 +1,40 @@
+===================================================
+0
+===================================================
+regexp_replace(_utf8'가나다라' collate utf8_ko_cs, _utf8'[가-힣]{4}' collate utf8_ko_cs, _utf8'한글' collate utf8_ko_cs)    
+한글     
+
+===================================================
+regexp_replace(_utf8'가나다라' collate utf8_ko_cs, _utf8'[가-나]{4}' collate utf8_ko_cs, _utf8'한글' collate utf8_ko_cs)    
+가나다라     
+
+===================================================
+regexp_replace(_utf8'가나다라' collate utf8_ko_cs, _utf8'[가-라]{4}' collate utf8_ko_cs, _utf8'한글' collate utf8_ko_cs)    
+한글     
+
+===================================================
+regexp_replace(_utf8'가나다라' collate utf8_ko_cs, _utf8'[[:alpha:]]' collate utf8_ko_cs, _utf8'한글' collate utf8_ko_cs)    
+한글한글한글한글     
+
+===================================================
+regexp_replace(_utf8'가나다라' collate utf8_ko_cs, _utf8'\w+' collate utf8_ko_cs, _utf8'한글' collate utf8_ko_cs)    
+한글     
+
+===================================================
+regexp_replace(_utf8'a1가b2나다라' collate utf8_ko_cs, _utf8'[가-다]' collate utf8_ko_cs, _utf8'#' collate utf8_ko_cs, 6)    
+a1가b2##라     
+
+===================================================
+regexp_replace(_utf8'a1가b2나다라' collate utf8_ko_cs, _utf8'[a-z]' collate utf8_ko_cs, _utf8'유' collate utf8_ko_cs, 4)    
+a1가유2나다라     
+
+===================================================
+regexp_replace(_utf8'a1가b2나다라' collate utf8_ko_cs, _utf8'\d' collate utf8_ko_cs, _utf8'숫자' collate utf8_ko_cs, 3)    
+a1가b숫자나다라     
+
+===================================================
+regexp_replace(_euckr'가나다라', _utf8' [가-나]{4}' collate utf8_ko_cs, _utf8'다른 문자셋' collate utf8_ko_cs)    
+媛????ㅻ     
+
+===================================================
+Error:-494

@@ -26,6 +26,7 @@ SELECT REGEXP_REPLACE (NULL, 'a|e|i|o|u', NULL);
 SELECT REGEXP_REPLACE ('abc', NULL, NULL);
 SELECT REGEXP_REPLACE (NULL, NULL, NULL);
 
+-- optional arguments
 SELECT REGEXP_REPLACE ('TechOnTheNet', 'a|e|i|o|u', '#', 6);
 SELECT REGEXP_REPLACE ('TechOnTheNet', 'a|e|i|o|u', '#', 'a');
 SELECT REGEXP_REPLACE ('TechOnTheNet', 'a|e|i|o|u', '#', 0);
