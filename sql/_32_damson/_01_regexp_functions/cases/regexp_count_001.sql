@@ -1,0 +1,10 @@
+-- test for regexp_count with mandatory arguments
+
+SELECT REGEXP_COUNT('123123123123123', '(12)3', 1, 'i');
+SELECT REGEXP_COUNT();
+SELECT REGEXP_COUNT ('abc');
+SELECT REGEXP_COUNT ('aabbb', 'ab{-1,3}$');
+SELECT REGEXP_COUNT('', ',[^,]+,');
+SELECT REGEXP_COUNT('123', '');
+SELECT REGEXP_COUNT(NULL, ',[^,]+,');
+SELECT REGEXP_COUNT('123123123123123', NULL);

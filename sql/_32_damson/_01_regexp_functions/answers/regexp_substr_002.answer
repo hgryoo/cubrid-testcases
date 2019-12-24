@@ -1,0 +1,62 @@
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-\w+', 20)    
+Gangnam-gu     
+
+===================================================
+Error:-494
+===================================================
+Error:-494
+===================================================
+Error:-494
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-\w+', 500)    
+null     
+
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-\w+', null)    
+null     
+
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-\w+', 1, 1)    
+Samseong-ro     
+
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-\w+', 1, 2)    
+86-gil     
+
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-\w+', 1, 3)    
+Gangnam-gu     
+
+===================================================
+Error:-494
+===================================================
+Error:-494
+===================================================
+Error:-494
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-\w+', 1, 4)    
+null     
+
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-\w+', 1, null)    
+null     
+
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-GU', 1, 1, 'i')    
+Gangnam-gu     
+
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-GU', 1, 1, 'c')    
+null     
+
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-GU', 1, 1, '')    
+Gangnam-gu     
+
+===================================================
+Error:-494
+===================================================
+regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '\w+\-GU', 1, 1, null)    
+null     
+
