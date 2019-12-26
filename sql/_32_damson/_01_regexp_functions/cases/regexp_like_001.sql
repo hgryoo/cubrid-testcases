@@ -1,3 +1,4 @@
+drop table if exists part01;
 create table part01(id int,d date,t time,f float,s varchar(10),m monetary,b bit) partition by hash(s) partitions 4;
 
 insert into part01 values(1002,'2010-01-01','01:00:00',-0.8,'abc',$3.55,B'1');
@@ -29,4 +30,5 @@ select id, d, t, f||'' f, s, m, b from part01 where regexp_like(s,'\b[a-z]{5,6}\
 select id, d, t, f||'' f, s, m, b from part01 where regexp_like(s,'^[A-Z]{2,6}','c') order by 1 desc,2 desc,3 desc,4 desc,5 desc,6 desc,7 desc; 
 select id, d, t, f||'' f, s, m, b from part01 where regexp_like(s,'^[A-Z]{2,6}') order by 1,2,3,4,5,6,7; 
 
-drop table part01;
+drop table if exists part01;
+
