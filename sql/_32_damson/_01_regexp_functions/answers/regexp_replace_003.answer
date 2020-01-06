@@ -17,7 +17,15 @@
 ===================================================
 1
 ===================================================
-Error:-494
+regexp_replace(a, '[a-d]', '#', 6, 0, 'i')    
+I have # fox     
+fox h#s # hum#n     
+any hum#n #n# fox ##n live pe##efully     
+     
+nofox here     
+lady is foxy     
+the foxx is not #n #nim#l     
+
 ===================================================
 a    regexp_replace(a, '[a-d]', '#')    regexp_replace(a, '[e-z]', '@')    
                

@@ -20,7 +20,7 @@ regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', '')
 
 ===================================================
 char_length(regexp_substr('Samseong-ro 86-gil, Gangnam-gu, Seoul', ''))    
-0     
+null     
 
 ===================================================
 regexp_substr(null, ',[^,]+,')    

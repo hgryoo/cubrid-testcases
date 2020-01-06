@@ -9,7 +9,7 @@ insert into T1(a) values ('lady is foxy');
 insert into T1(a) values ('the foxx is not an animal');
 
 select
-  regexp_replace (a, '[a-d]', '#', 6, 0, i)
+  regexp_replace (a, '[a-d]', '#', 6, 0, 'i')
 from t1;
 
 --TEST: more than once in select list
